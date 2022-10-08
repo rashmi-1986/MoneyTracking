@@ -1,0 +1,6 @@
+﻿EXPENCES:                                          INCOME:
+--------                                          --------
+Grossery - 3445                                    Salary: 15000 kr
+Avgift - 5600
+Electricity - 965
+Insurence - 250
