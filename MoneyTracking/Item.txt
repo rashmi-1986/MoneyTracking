@@ -1,6 +1,6 @@
-﻿EXPENCES:                                          INCOME:
+﻿Title                      Month                    Amount
 --------                                          --------
-Grossery - 3445                                    Salary: 15000 kr
-Avgift - 5600
-Electricity - 965
-Insurence - 250
+  Salary                    JAN                         15000 
+   Expense                  JAN                        5600
+   Expense                    JAN                       965
+    Expense                   JAN                      250
