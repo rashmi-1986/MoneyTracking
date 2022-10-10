@@ -44,6 +44,7 @@ namespace MoneyTracking
         internal static void AddNew()
         {
             string mypath = $"{directory}{fileName}";
+            Console.WriteLine();
             {
 
                 
