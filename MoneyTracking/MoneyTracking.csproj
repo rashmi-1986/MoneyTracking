@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UtilitiesHelpers.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Item.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

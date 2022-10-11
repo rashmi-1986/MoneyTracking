@@ -1,15 +1,8 @@
-﻿using System;
-using System.Numerics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MoneyTracking;
-using System.Runtime.ConstrainedExecution;
-using System.ComponentModel;
-using System.Transactions;
+﻿using MoneyTracking;
+//using System.Transactions;
 
 
-List<Transaction> transactions = new List<Transaction>();
+
 string options;
 do
 {
@@ -31,8 +24,9 @@ do
             Console.Write("Enter the Option: ");
             
             options=Console.ReadLine();
-            
-            switch (options)
+
+    
+    switch (options)
             {
                 case "1":
                   Utilities.ShowItems();
@@ -52,59 +46,4 @@ do
 }
 while (options != "4");
 Console.WriteLine("Thanks for using the application");
-
-
-
-
-              
-
-    /*
-
-    static void Save()
-    {
-        Console.WriteLine("Press Enter to Save and Quit");
-        Console.ReadLine();
-        System.Environment.Exit(1);
-    }
-
-
-*/
-
-
-
-
-
-
-
-
-
-/*class Tracking
-{
-private static string itemType;
-string filepath = @"C: ExpencesFile1.txt";
-
-internal static void ShowItems(List<Item> items)
-
-{
-Console.WriteLine("Select type of tracking");
-Console.WriteLine("(a). ALL\n (b). EXPENSES\n (c). INCOME\n");
-Console.Write("Your selection: ");
-string itemFilterType = Console.ReadLine();
-if (itemType == "(a)" && itemType == "(b)" && itemType == "(c)")
-{
-    Console.WriteLine("Invalid selection");
-    return;
-}
-
-}*/
-
-
-
-
-
-
-
-
-
-
 

@@ -1,6 +1,1 @@
-﻿Title                      Month                    Amount
---------                                          --------
-  Salary                    JAN                         15000 
-   Expense                  JAN                        5600
-   Expense                    JAN                       965
-    Expense                   JAN                      250
+Title:Grocery;Month:October;Amount:2000;
