@@ -1,1 +1,2 @@
-Title:Grocery;Month:October;Amount:2000;
+Title:salary;Month:october;Amount:2345;
+Title:1;Month:october;Amount:5677;
