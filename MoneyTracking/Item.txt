@@ -1,2 +1,4 @@
-Title:salary;Month:october;Amount:2345;
-Title:1;Month:october;Amount:5677;
+Title:income;Month:jan;Amount:25000;
+Title:expense;Month:jan;Amount:2400;
+Title:expense;Month:jan;Amount:4500;
+Title:expense;Month:jan;Amount:230;

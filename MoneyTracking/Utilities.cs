@@ -39,6 +39,8 @@ namespace MoneyTracking
             //Console.Write("Your selection: ");
             string[] ExpenseLines = (string[])File.ReadAllLines(mypath);
             //Console.WriteLine("Money Transaction ");
+            
+            
             foreach (string line in ExpenseLines)
             {
                 Console.WriteLine("\t" + line);
@@ -50,10 +52,18 @@ namespace MoneyTracking
         internal static void AddNew()
         {
             string mypath = $"{directory}{fileName}";
-            //string[] ExpenseLines = (string[])File.ReadAllLines(mypath);
+            string[] ExpenseLines = (string[])File.ReadAllLines(mypath);
             Console.WriteLine("Adding a new transaction...");
+            string[] UtilitiesAsString = (string[])File.ReadAllLines(mypath);
+            for (int i = 0; i < UtilitiesAsString.Length; i++)
+            {
+                string[] UtilitiesSplit = UtilitiesAsString[i].Split(';');
+                string Title = UtilitiesSplit[0].Substring(i + 1);
+                string Month = UtilitiesSplit[0].Substring(i + 1);
+                string Amount = UtilitiesSplit[0].Substring(i + 1);
+            }
 
-            Console.Write("Input Title: ");
+                Console.Write("Input Title: ");
             string title = Console.ReadLine();
 
             Console.Write("Input Month: ");
@@ -70,6 +80,7 @@ namespace MoneyTracking
                 sb.Append($"Title:{transaction.Title};");
                 sb.Append($"Month:{transaction.Month};");
                 sb.Append($"Amount:{transaction.Amount};");
+                
 
                 sb.Append(Environment.NewLine);
             }
@@ -80,12 +91,16 @@ namespace MoneyTracking
 
         internal static void EditItem()
         {
-
+            string mypath = $"{directory}{fileName}";
+            string[] ExpenseLines = (string[])File.ReadAllLines(mypath);
+            Console.WriteLine("Edit the Transaction...");
+            Console.ReadLine(); 
         }
         internal static void Save()
         {
+            
             Console.WriteLine("Press Enter Save and Quit the app");
-
+            Console.ReadLine();
         }
     }
 }

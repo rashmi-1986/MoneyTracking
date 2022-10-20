@@ -12,7 +12,9 @@ do
             Console.WriteLine("* Welcome to MoneyTracking *");
             Console.WriteLine("***************************");
             Console.WriteLine("");
-           
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Your account balance is 30000");
+            Console.WriteLine("");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Pick an option from 1 - 4 : ");
 
@@ -46,4 +48,6 @@ do
 }
 while (options != "4");
 Console.WriteLine("Thanks for using the application");
-
+Console.WriteLine("Press enter to save and exit from the app");
+Console.ReadLine();
+System.Environment.Exit(0);
