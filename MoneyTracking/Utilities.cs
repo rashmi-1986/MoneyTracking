@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Runtime.ConstrainedExecution;
 using System.Transactions;
+using System.ComponentModel.DataAnnotations;
 
 namespace MoneyTracking
 {
@@ -30,6 +31,8 @@ namespace MoneyTracking
         private static List<Transaction> transactions = new List<Transaction>();
         private static string directory = @"C:\Users\PRACH\source\repos\MoneyTracking\MoneyTracking\";
         private static string fileName = "Item.txt";
+        private static int edit;
+        private static int item;
 
         internal static void ShowItems()
         {
@@ -80,8 +83,8 @@ namespace MoneyTracking
                 sb.Append($"Title:{transaction.Title};");
                 sb.Append($"Month:{transaction.Month};");
                 sb.Append($"Amount:{transaction.Amount};");
-                
 
+                
                 sb.Append(Environment.NewLine);
             }
             File.WriteAllText(mypath, sb.ToString());
@@ -91,6 +94,18 @@ namespace MoneyTracking
 
         internal static void EditItem()
         {
+            Console.WriteLine("Edit the Transaction...");
+            edit = int.Parse(Console.ReadLine());
+            if(edit % 100 != 0)
+            {
+                Console.WriteLine("\n\nEnter the amount"); 
+            }
+            else
+            {
+                item = item - edit;
+                Console.WriteLine("Edited the amount");
+            }
+
             string mypath = $"{directory}{fileName}";
             string[] ExpenseLines = (string[])File.ReadAllLines(mypath);
             Console.WriteLine("Edit the Transaction...");
