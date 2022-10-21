@@ -94,23 +94,27 @@ namespace MoneyTracking
 
         internal static void EditItem()
         {
-            Console.WriteLine("Edit the Transaction...");
-            edit = int.Parse(Console.ReadLine());
-            if(edit % 100 != 0)
-            {
-                Console.WriteLine("\n\nEnter the amount"); 
-            }
-            else
-            {
-                item = item - edit;
-                Console.WriteLine("Edited the amount");
-            }
+            //Console.Write("Input Title: ");
+            //string title = Console.ReadLine();
+
+            //Console.Write("Input Month: ");
+            //string month = Console.ReadLine();
+
+            //Console.Write("Input Amount: ");
+            //int amount = int.Parse(Console.ReadLine());
+           
+            //transactions.Add(new Transaction(title, month, amount));
 
             string mypath = $"{directory}{fileName}";
             string[] ExpenseLines = (string[])File.ReadAllLines(mypath);
             Console.WriteLine("Edit the Transaction...");
+            
+            
             Console.ReadLine(); 
         }
+
+       
+
         internal static void Save()
         {
             
